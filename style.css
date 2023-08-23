@@ -1,10 +1,14 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: rgb(38, 191, 218);
+  background-color: rgb(18, 19, 19);
 }
 
 #Skill {
-  backgound-color: #0099ff;
+  backgound-color: #000000;
+}
+
+footer {
+  background-color: black;
 }
 
 /* ===== Google Font Import - Poppins ===== */
@@ -18,4 +22,75 @@
 
 section {
   padding-top: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #000000;
+}
+
+body h3 {
+  display: flex;
+  justify-content: center;
+  background: var(--bg: #000000);
+}
+
+h3 ul {
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+
+h3 ul li {
+  position: relative;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+h3 ul li:hover {
+  z-index: 10000;
+  transform: scale(0.75);
+}
+
+h3 ul li:before {
+  content: " ";
+  position: absolute;
+  inset: 30px;
+  box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
+  transition: 0.5s;
+}
+
+h3 ul li:hover::before {
+  inset: 0px;
+}
+h3 ul li::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  transform: rotate(45deg);
+}
+
+h3 ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--clr);
+  z-index: 10;
+  font-size: 2em;
+  transition: 0.5s;
+}
+
+h3 ul li:hover a {
+  font-size: 3em;
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
