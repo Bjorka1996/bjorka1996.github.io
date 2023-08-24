@@ -11,17 +11,8 @@ footer {
   background-color: black;
 }
 
-/* ===== Google Font Import - Poppins ===== */
-@import url ("https://fonts.googleapis.com/css2?family=Poopins:wght@200;300;400;500;600&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 section {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 * {
@@ -36,20 +27,21 @@ section {
 body h3 {
   display: flex;
   justify-content: center;
-  background: var(--bg: #000000);
+  text-align: center;
 }
 
 h3 ul {
   position: relative;
   display: flex;
-  gap: 50px;
+  gap: 34px;
+  text-align: center;
 }
 
 h3 ul li {
   position: relative;
   list-style: none;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +78,7 @@ h3 ul li a {
   text-decoration: none;
   color: var(--clr);
   z-index: 10;
-  font-size: 2em;
+  font-size: 1.7em;
   transition: 0.5s;
 }
 
