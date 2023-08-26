@@ -32,9 +32,10 @@ body h3 {
 
 h3 ul {
   position: relative;
-  display: flex;
-  gap: 34px;
+  left: -20px;
   text-align: center;
+  display: flex;
+  gap: 30px;
 }
 
 h3 ul li {
@@ -85,4 +86,21 @@ h3 ul li a {
 h3 ul li:hover a {
   font-size: 3em;
   filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+footer .social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
 }
