@@ -129,8 +129,9 @@ h2 {
 .coba .textcoba {
   position: relative;
   color: aqua;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 300;
+  font-family: "Kalam", cursive;
 }
 
 .coba .textcoba.first-text {
